@@ -24,6 +24,7 @@ CREATE TABLE image (
     username VARCHAR(50) NOT NULL,
     image BYTEA NOT NULL,
     deskripsi VARCHAR(120) NOT NULL,
+    like_img BIGINT,
 
     CONSTRAINT fk_image_account_username FOREIGN KEY (username)
         REFERENCES account (username)
